@@ -20,8 +20,6 @@ public:
 private:
 	void startModule(Module * module);
 	void stopModule(Module* modules);
-
-	
 	
 	std::vector<Module*> activeModules;
 	std::vector<Module*>  inactiveModules;

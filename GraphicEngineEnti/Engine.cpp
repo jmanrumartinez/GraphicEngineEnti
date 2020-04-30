@@ -2,7 +2,7 @@
 #include "Engine.h"
 #include "Modules/RenderModule.h"
 #include "Modules/JoseModule.h"
-
+#include "JoanModule.h"
 
 
 
@@ -68,10 +68,7 @@ void Engine::doFrame()
 
 void Engine::update(float dt)
 {
-	
 	moduleManager.update(dt);
-
-
 }
 
 void Engine::setModelObjectConstants(const glm::mat4& model, const glm::vec4& color)
@@ -81,9 +78,9 @@ void Engine::setModelObjectConstants(const glm::mat4& model, const glm::vec4& co
 
 void Engine::registerAllModules()
 {
-	JoseModule * module = new JoseModule;
+	//JoseModule * module = new JoseModule;
+	JoanModule * module = new JoanModule;
 
-	
 	moduleManager.registerModule(module);
 //	moduleManager.stopModule(module);
 }

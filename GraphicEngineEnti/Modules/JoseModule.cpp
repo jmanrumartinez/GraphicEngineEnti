@@ -95,8 +95,6 @@ extern Mesh Sphere;
 	  front = glm::vec3(0, 0, 1);
 	  glm::vec3 euler = cam->getTransform().getEulerAngles();
 	 
-
-
 	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
 	{
 		newAngle +=glm::radians(5.0f) ;
@@ -135,8 +133,6 @@ extern Mesh Sphere;
 	{
 		canPress = true;
 	}
-	
-	
 		
 	target = pos + glm::vec3( sinf(newAngle) * cosf(newPitch),
 		sinf(newPitch), cosf(newAngle) * cosf(newPitch));
