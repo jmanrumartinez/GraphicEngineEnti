@@ -51,7 +51,6 @@ extern Mesh Sphere;
 	  cubetransform.setScale(25.0f);
 	  cameraController();
 	 
-	  //glm::vec3 front = cam->getFront();
 	  cam->lookAt(pos,  target);
   }
 

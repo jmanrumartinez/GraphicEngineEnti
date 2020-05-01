@@ -8,7 +8,7 @@
 class JoanModule : public Module
 {
 private:
-	Transform cubeT, cubeT2, cubeT3;
+	Transform quad1, cubeT, cubeT2, cubeT3;
 	Camera* camera;
 	GLFWwindow* window;
 	glm::vec3 pos;
@@ -23,12 +23,12 @@ private:
 public:
 
 	virtual void start() override;
+	virtual void stop() override;
 	virtual void renderDebug() override;
 	virtual void update(float elapsed)override;
 
 	void initCameras();
 	void cameraController();
-
 
 	JoanModule();
 	~JoanModule();

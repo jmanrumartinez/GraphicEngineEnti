@@ -78,7 +78,7 @@ void Engine::setModelObjectConstants(const glm::mat4& model, const glm::vec4& co
 
 void Engine::registerAllModules()
 {
-	//JoseModule * module = new JoseModule;
+	// JoseModule * module = new JoseModule;
 	JoanModule * module = new JoanModule;
 
 	moduleManager.registerModule(module);
