@@ -135,9 +135,6 @@ void JoanModule::renderDebug()
 
 	Engine::get().setModelObjectConstants(cubeT3.asMatrix(), glm::vec4(0.78f, 0, 0.63f, 1));
 	cube.activateAndRender();
-
-
-	
 }
 
 

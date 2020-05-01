@@ -36,7 +36,6 @@ extern Mesh Sphere;
 	
 	  glm::vec3 euler = quad3.getEulerAngles();
 	  quad1.setPosition(0.0f, 0.0f, 0.0f);
-	
 
 	  quad2.setPosition(glm::vec3(0, 1, -3));
 	  float num = euler.y + glfwGetTime() * 10.0f;
